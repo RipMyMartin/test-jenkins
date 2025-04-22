@@ -56,5 +56,13 @@ pipeline {
                 }
             }
         }
+	stage('cheack jenkins file') {
+		steps {
+			script {
+
+		sh 'cat Jenkinsfile'
+			}
+		}
+	}
     }
 }
